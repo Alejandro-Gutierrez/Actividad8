@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #Formularios #Izquierdo,#Formularios #Derecho{
+            display: inline-block;
+        }
+       
+        /*Formulario parte 1 lado izquierdo*/
+        
+        #Formularios{
+            display: inline-block;
+            margin-left: 50px;
+            background: rgb(201, 197, 197);
+            padding: 10px;
+        }
+        
+        #imagen{
+            display: inline-block;
+            margin-left: 50px;
+        }
+         #select1{
+            
+            margin-left: 74px;
+         }
+         #text1{
+             margin-right: 10px;
+            width: 201px; 
+         }
+
+         #text2{
+            width: 250px;
+            margin-left: 49px;
+         }
+        #text3{
+            width: 250px;
+            margin-left: 37px;
+        }
+        #text4{
+            width: 250px;
+            margin-left: 90px;
+        }
+        #rb{
+            margin-left: 60px;
+        }
+        
+
+
+        /*Formulario parte 1 lado Derecho*/
+        
+        #text5{
+            margin-left: 35px;
+        }
+            
+        #select4{
+            width: 175px;
+            margin-left:79px; 
+        }
+        #select5{
+            width: 175px;
+            margin-left:103px; 
+
+        }
+        #select3{
+            width: 175px;
+            margin-left:143px; 
+
+        }
+        #select2{
+            width: 175px;
+            margin-left:94px; 
+
+        }
+
+
+        /*Formulario parte 2*/
+        #imagen1{
+            margin-left: 50px;
+            display: inline-block;
+        }
+        #Parte2{
+            width: 890px;
+            display: inline-block;
+            
+            margin-left: 50px;
+            background: rgb(201, 197, 197);
+            padding: 10px;
+        }
+
+        #rb1{
+            margin-left: 50px;
+        }
+
+        #text6{
+            margin-left: 20px;
+        }
+
+        #text7{
+            margin-left: 80px;
+        }
+
+        #text8{
+            margin-left: 45px;
+        }
+
+        /*Boton*/
+
+        #Enviar{
+            margin-top: 30px;
+            margin-left: 600px;
+        }
+        /*Titulos*/
+        h2{
+            text-align: center;
+            background: green;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div > <!--Este primer div es el contendor de los datos personales del formulario-->
+        <h2>DATOS PERSONALES</h2>
+        <div id="imagen">
+            <img src="Imagen/logo1.png" height="150px" width="100px" >
+
+
+        </div>
+
+        <div id="Formularios">
+            <Form id="Izquierdo">
+                <p>
+                    <label for="text1">Documento: </label>
+                    <select  id="select1" >
+                        <option value="c.c">C.c</option>
+                    </select>
+                    <input type="text" id="text1">
+                
+                </p>
+                <p>
+                    <label for="text2">Primer apellido: </label>
+                    <input type="text" id="text2" >
+                </p>
+                <p>
+                    <label for="text3">Segundo apellido: </label>
+                    <input type="text" id="text3">
+                </p>
+                <p>
+                    <label for="text4">Nombres: </label>
+                    <input type="text" id="text4">
+                </p>
+                <p>
+                    <label for="">Libreta militar: </label>
+                    <input type="radio" value="Si" id="rb">Si
+                    <input type="radio" value="No">No
+                    <input type="text" disabled=false>
+                </p>
+            </Form>
+
+            <form id="Derecho">
+                <p>
+                    <label for="select2">Expidad en: </label>
+                    <select  id="select2" >
+                        <option value="Santa Marta">Santa Marta</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="text5">Fecha de nacimiento: </label>
+                    <input type="text" id="text5">
+                    <label for="">(DD/MMM/AAA)</label>
+                </p>
+                <p>
+                    <label for="select3">Pais:</label>
+                    <select  id="select3" >
+                        <option value="Colombia">Colombia:</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="select4">Departemento:</label>
+                    <select  id="select4" >
+                        <option value="Internacional">Internacional</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="select5">Municipio:</label>
+                    <select  id="select5" >
+                        <option value="Santa Marta">Santa Marta</option>
+                    </select>
+                </p>
+            </form>
+        </div>
+    </div> <!--Fin del primer div-->
+
+    <div> <!--Este segund div es el contendor de los estudios secundarios del formulario-->
+        <h2>ESTUDIOS SECUNDARIOS</h2>
+        <div id="imagen1">
+            <img src="Imagen/logo2.jpg" height="150px" width="100px" >
+    
+    
+        </div>
+
+        <div id="Parte2">
+           
+            <p >
+                <label for="">Nivel de aprobacion: </label>
+                <input type="radio" id="rb1">1°
+                <input type="radio">2°
+                <input type="radio">3°
+                <input type="radio">4°
+                <input type="radio">5°
+                <input type="radio">6°
+                <input type="radio">7°
+                <input type="radio">8°
+                <input type="radio">9°
+                <input type="radio">10°
+            </p>
+
+            <p>
+                <label for="text6">Nombre de la institucion: </label>
+                <input type="text" id="text6">
+            </p>
+
+            <p>
+                <label for="text7">Titulo obtenido: </label>
+                <input type="text" id="text7">
+            </p>
+            <p>
+                <label for="text8">Fecha de graduacion: </label>
+                <input type="text" id="text8">
+                <label for="">(DD/MMM/AAA)</label>
+            </p>
+
+        </div>
+
+
+
+
+    </div><!--Fin del segundo div-->
+
+    <div id="Enviar">
+        <button type="submit">Submit</button>
+    </div>
+    
+</body>
+</html>
